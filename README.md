@@ -1,44 +1,33 @@
-# Actions on Google Silly Name Maker Sample using API.AI
+# Actions on Google: Silly Name Maker
 
-This is a super simple Action, built using API.AI, to generate a silly name
-based on your lucky number and favorite color. This can be built entirely in
-the API.AI console, using just a couple intents.
+This sample demonstrates an Actions on Google feature, parameters, for use on Google Assistant -- using the [Node.js client library](https://github.com/actions-on-google/actions-on-google-nodejs) and does not use a fulfillment webhook.
 
 ## Setup Instructions
+### Configuration
+#### Actions Console
+1. From the [Actions on Google Console](https://console.actions.google.com/), New project (this will be your *Project ID*) > **Create Project** > under **More options** > **Conversational**
+1. From the top menu under **Develop** > **Actions** (left nav) > **Add your first action** > **BUILD** (this will bring you to the Dialogflow console) > Select language and time zone > **CREATE**.
+1. In the Dialogflow console, go to **Settings** ⚙ > **Export and Import** > **Restore from zip** using the `agent.zip` in this sample's directory.
 
-### Pre-requisites
- 1. API.AI account: [https://api.ai](https://api.ai)
- 2. Google Cloud project: [https://console.cloud.google.com/project](https://console.cloud.google.com/project)
+#### Dialogflow Console
+1. From the left navigation menu, click **Integrations** > **Integration Settings** under Google Assistant > Enable **Auto-preview changes** >  **Test** to open the Actions on Google simulator then say or type `Talk to my test app`.
 
-See the developer guide and release notes at [https://developers.google.com/actions/](https://developers.google.com/actions/) for more details.
+### Running this Sample
++ You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project. Just say or type, “OK Google, talk to my test app”.
++ You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
 
-### Steps
- 1. Create a new agent in API.AI [https://api.ai](https://api.ai).
- 1. Click on the project gear icon to see the project settings.
- 1. Select "Export and Import".
- 1. Select "Restore from zip". Follow the directions to restore.
- 1. Select the SillyNameMaker.zip file in this repo.
- 1. Make sure all domains are turned off.
- 1. Enable Actions on Google in the Integrations.
- 1. In the make_name intent, check "End Conversation" for Actions on Google.
- 1. Provide an invocation name for the action.
- 1. Authorize and preview the action in the [web simulator](https://developers.google.com/actions/tools/web-simulator).
+## References & Issues
++ Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google), [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/) or [Support](https://developers.google.com/assistant/support).
++ For bugs, please report an issue on Github.
++ Actions on Google [Documentation](https://developers.google.com/assistant)
++ Actions on Google [Codelabs](https://codelabs.developers.google.com/?cat=Assistant)
++ [Webhook Boilerplate Template](https://github.com/actions-on-google/dialogflow-webhook-boilerplate-nodejs) for Actions on Google
 
-For more detailed information on deployment, see the [documentation](https://developers.google.com/actions/samples/).
-
-## References and How to report bugs
-* Actions on Google documentation: [https://developers.google.com/actions/](https://developers.google.com/actions/).
-* If you find any issues, please open a bug here on GitHub.
-* Questions are answered on [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google).
-
-## How to make contributions?
-Please read and follow the steps in the CONTRIBUTING.md.
+## Make Contributions
+Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
-See LICENSE.md.
+See [LICENSE](LICENSE).
 
 ## Terms
 Your use of this sample is subject to, and by using or downloading the sample files you agree to comply with, the [Google APIs Terms of Service](https://developers.google.com/terms/).
-
-## Google+
-Actions on Google Developers Community on Google+ [https://g.co/actionsdev](https://g.co/actionsdev).
